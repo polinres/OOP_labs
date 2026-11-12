@@ -41,7 +41,7 @@ class Book : public PrintProduct {
 private:
     std::string isbn;
     std::string genre;
-    Author author; 
+    Author author;
 public:
     Book(std::string t = "", int y = 0, int c = 0, double p = 0.0,
         std::string isbn = "", std::string genre = "", Author a = Author());
@@ -52,9 +52,10 @@ public:
     void load(std::istream& is) override;
 
     std::string getISBN() const { return isbn; }
+    Author getAuthor() const { return author; }
 
-    bool operator<(const Book& other) const;  
-    bool operator==(const Book& other) const; 
+    bool operator<(const Book& other) const;
+    bool operator==(const Book& other) const;
 };
 
 class Magazine : public PrintProduct {

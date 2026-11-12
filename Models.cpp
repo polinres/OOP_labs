@@ -103,11 +103,11 @@ void Book::load(std::istream& is) {
 }
 
 bool Book::operator<(const Book& other) const {
-    return this->price > other.price;   
+    return this->price > other.price;
 }
 
 bool Book::operator==(const Book& other) const {
-    return this->isbn == other.isbn; 
+    return this->isbn == other.isbn;
 }
 
 // Magazine 
